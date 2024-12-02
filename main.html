@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/5ea089aff0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+        <!-- Header Section -->
+        <div id="header">
+            <div class="container">
+                <nav>   
+                    <a href="#home" class="logo">Glaecel <span>Lambon</span></a>
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#project">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class='bx bx-x-circle' onclick="closemenu()"></i>
+                    </ul>
+                    <i class='bx bx-menu' onclick="openmenu()"></i>
+                </nav>
+                <section class="home">         
+                    <div class="home-content">
+                        <h3>Hello!</h3>
+                        <h1>I am <span>Glaecel</span><br>Lambon</h1>
+                        <p>A passionate and dedicated student exploring the world of software development.</p>
+                    </div>
+                    <div class="homesocial-icons">
+                        <a href="https://www.facebook.com/glaecel.ola?mibextid=kFxxJD" target="_blank"><i class='bx bxl-facebook'></i></a>
+                            <a href="https://www.instagram.com/olagagaa/profilecard/?igsh=OHE0YTd6Yno0dmxt" target="_blank"><i class='bx bxl-instagram'></i></a>
+                            <a href="https://x.com/glcelolaa?t=Alo9vb0N3nav2Jf_1dlsMw&s=09" target="_blank"><i class='bx bxl-twitter'></i></a>
+                            <a href="https://github.com/olagagaa" target="_blank"><i class='bx bxl-github'></i></a>
+                    </div>
+                    <a href="#about" class="btn-box">Know Me</a>
+                </section>
+            </div>
+        </div>
+
+        <!-- About Section -->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/gradpic.jpg" class="gradpic" alt="gradpic">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p class="description">I'm a third-year student at Marinduque State University pursuing a Bachelor of Science in Information Technology, specializing in Software Development. I live in Malusak, Mogpog, Marinduque. I'm passionate about software development, continuous learning, and self-improvement.</p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                            <p class="tab-links" onclick="opentab('hobby')">Hobby</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="education">
+                            <ul>
+                                <li><span>2024 Current</span><br>Marinduque State University</li>
+                                <li><span>2020-2022 Senior High School</span><br>Marinduque Academy</li>
+                                <li><span>2016-2020 High School</span><br>Quezon Roxas High School</li>
+                                <li><span>2010-2016 Elementary</span><br>Magapua Elementary School</li>
+                            </ul>
+                
+                        </div>
+                        <div class="tab-contents" id="hobby">
+                            <ul>
+                                <li>Watching Vlogs</li>
+                                <li>Playing Online Games</li>
+                                <li>Cooking</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Skills Section -->
+        <div id="skills">
+            <div class="container">
+                <h1 class="sub-title">My Skills</h1>
+                <div class="skills-list">
+                    <div>
+                        <i class="fa-brands fa-figma"></i>
+                        <h2>Figma</h2>
+                        <p>Learning Figma as a student helps me acquire critical abilities including designing layouts, prototyping, and constructing reusable components for a consistent look.</p>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-python"></i>
+                        <h2>Python</h2>
+                        <p>As an IT student learning Python, you'll develop essential programming skills including writing efficient code, managing variables, and developing functions to address problems. </p>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-photo-film"></i>
+                        <h2>Filmora</h2>
+                        <p>As a student learning Filmora, acquire essential video editing skills, such as cutting, trimming, and arranging clips to create cohesive videos. I also gain proficiency in adding effects, transitions, and audio to enhance the overall production quality.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Projects Section -->
+        <div id="project">
+            <div class="container">
+                <h1 class="sub-title">My Projects</h1>
+                <div class="project-list">
+                    <div class="project">
+                        <img src="images/project1.jpg" alt="project1">
+                    </div>
+                    <div class="project">
+                        <img src="images/project2.jpg" alt="project2">
+                    </div>
+                    <div class="project">
+                        <img src="images/project3.jpg" alt="project3">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Section -->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-regular fa-paper-plane"></i> lambon.glaecel@marsu.edu.ph</p>
+                        <p><i class="fa-solid fa-square-phone"></i> 09637954929</p>
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/glaecel.ola?mibextid=kFxxJD" target="_blank"><i class='bx bxl-facebook'></i></a>
+                            <a href="https://www.instagram.com/olagagaa/profilecard/?igsh=OHE0YTd6Yno0dmxt" target="_blank"><i class='bx bxl-instagram'></i></a>
+                            <a href="https://x.com/glcelolaa?t=Alo9vb0N3nav2Jf_1dlsMw&s=09" target="_blank"><i class='bx bxl-twitter'></i></a>
+                            <a href="https://github.com/olagagaa" target="_blank"><i class='bx bxl-github'></i></a>
+                        </div>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Enter Your Name" required>
+                            <input type="email" name="Email" placeholder="Enter Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Enter Your Message"></textarea>
+                            <button type="submit">Submit</button>
+                        </form>
+                        <span id="message"></span>
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </div>
+    
+    <script src="main.js"></script>
+
+</body>
+</html>
